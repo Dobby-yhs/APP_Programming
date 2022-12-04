@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+    <link rel="stylesheet" href="css/dropbar.css">
+  	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	
+	<title>수량 파악 사이트</title>
+
+</head>
+<body>
+	<header class="cd-main-header">
+		<div class="cd-main-header__logo"><a href="index_ad.html"><img src="img/logo.png" width="80px" height="50px" alt="Logo"></a></div>
+
+		<nav class="cd-main-nav js-main-nav">
+			<ul class="cd-main-nav__list js-signin-modal-trigger">
+				<!-- inser more links here -->
+				<li><input id="search" name="search" type="text" placeholder="Search.." style="width: 300px; height:30px"> <button class="btn btn-secondary">검색</button></li>
+                <li class="dropdown">
+                    <button class="dropbtn cd-main-nav__item cd-main-nav__item--signup" onclick="myFunction()"> 상품 </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#"> 라이프스타일 </a>
+                        <a href="#"> 조던 </a>
+                        <a href="#"> 러닝 </a>
+                        <a href="#"> 워킹 </a>
+                        <a href="#"> 트레이닝 </a>
+                        <a href="#"> 샌들 & 슬리퍼 </a>
+                    </div>
+                </li>
+				<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="index_mall.html">매장</a></li>
+                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="index_newproduct.html">출시 예정 상품</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<br><br>
+
+	<!-- body_main -->
+	<div class="container">
+		<div class="row" align="center">
+			<div class="col-md-5">
+				<h2> 품절 임박 상품 </h5>
+				<img src="image/shoes1.png" alt="shoes1">
+				<h4> 조크 에어 포스 1 미드 '07</h4>
+				<p> 179,000원 </p>
+				<p> 컬러: 플랙스 / 검 라이트 브라운 / 블랙 / 휘트 </p>
+			</div>
+			<div class="col-md-5">
+				<h2> 사용자 추천 상품 </h5>
+				<img src="image/shoes3.png" alt="shoes3">
+				<h4> 나이키 덩크 하이 레트로 SE </h4>
+				<p> 159,000원 </p>
+				<p> 컬러: 허니듀 / 서밋 화이트 / 엘리멘탈 골드 / 허니듀 </p>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+	
+	<footer class="container">
+		<hr>
+		<p>
+			&copy; 대표 : 윤해상    고유 번호 : 20191002    메일 : jjj1299@sungkyul.ac.kr
+		</p>
+	</footer>
+    <script src="js/dropdown.js"></script>
+</body>
+</html>
