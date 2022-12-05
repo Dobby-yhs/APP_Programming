@@ -1,0 +1,12 @@
+CREATE TABLE myeongdong (
+`myeongdong_no` int primary key auto_increment,
+`myeongdong_product` varchar(100) DEFAULT NULL,
+`myeongdong_unit` int DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO myeongdong VALUES(1, "조크 프리 메트콘", 17);
+INSERT INTO myeongdong VALUES(2, "조크 에어맥스 알파 트레이너 5", 28);
+INSERT INTO myeongdong VALUES(3, "조크 줌X 베이퍼플라이 넥스트% 2", 27);
+INSERT INTO myeongdong VALUES(4, "조크 줌X 스트릭플라이", 36);
+INSERT INTO myeongdong VALUE(5, "조크 에어 조던 XXXVII 테이텀 PF"", 16);
+INSERT INTO myeongdong VALUES(6, "조크 리액트 페가수스 트레일 4 GORE-TEX", 7);

@@ -1,0 +1,12 @@
+CREATE TABLE incheon (
+`incheon_no` int primary key auto_increment,
+`incheon_product` varchar(100) DEFAULT NULL,
+`incheon_unit` int DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO incheon VALUES(1, "조크 슈퍼렙 고 3 넥스트 네이처 플라이니트", 37);
+INSERT INTO incheon VALUES(2, "조크 에어 줌 페가수스 39 쉴드", 23);
+INSERT INTO incheon VALUES(3, "조크 줌X 스트릭플라이", 31);
+INSERT INTO incheon VALUES(4, "조크 조던 누 레트로 1 로우", 28)
+INSERT INTO incheon VALUE(5, "조크 조던 시리즈 .06", 19);
+INSERT INTO incheon VALUES(6, "조크 에어 포스 1 '07", 34);

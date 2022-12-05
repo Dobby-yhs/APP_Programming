@@ -1,0 +1,12 @@
+CREATE TABLE gwangmyeong (
+`gwangmyeong_no` int primary key auto_increment,
+`gwangmyeong_product` varchar(100) DEFAULT NULL,
+`gwangmyeong_unit` int DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO gwangmyeong VALUES(1, "조크 프리 메트콘 4", 25);
+INSERT INTO gwangmyeong VALUES(2, "조크 메트콘 7", 15);
+INSERT INTO gwangmyeong VALUES(3, "조크 에어 줌 알파플라이 넥스트% 2", 17);
+INSERT INTO gwangmyeong VALUES(4, "조크 에어 조던 1 미드 SE 크래프트 1 '07", 8)
+INSERT INTO gwangmyeong VALUE(5, "조크 에어 포스 1 미드 '07", 17);
+INSERT INTO gwangmyeong VALUES(6, "조크 블레이저 로우 '77 점보", 18);

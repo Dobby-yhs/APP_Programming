@@ -27,9 +27,9 @@
 		)";
 
 		if($mysqli->query($sql)){ 
-		  echo '<script>alert("success inserting")</script>'; 
+		  echo '<script>alert("회원가입에 성공하셨습니다.")</script>'; 
 		}else{ 
-		  echo '<script>alert("fail to insert sql")</script>';
+		  echo '<script>alert("회원가입에 실패하셨습니다.")</script>';
 		}
 
 		mysqli_close($mysqli);

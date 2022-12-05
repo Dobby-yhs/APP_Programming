@@ -1,0 +1,13 @@
+CREATE TABLE trainning (
+`trainning_no` int primary key auto_increment,
+`trainning_name` varchar(100) DEFAULT NULL,
+`trainning_price` varchar(50) DEFAULT NULL,
+`trainning_description` varchar(300) DEFAULT NULL,
+`trainning_unit` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO trainning VALUES(1, "조크 프리 메트콘 4", '139,000원', '컬러: 블랙 / 아이언 그레이 / 볼트 / 블랙', 39);
+INSERT INTO trainning VALUES(2, "조크 에어맥스 알파 트레이너 5", '99,000원', '컬러: 화이트 / 블랙 / 골드 스웨이드', 68);
+INSERT INTO trainning VALUES(3, "조크 디파이 올 데이", '79,000원', '컬러: 화이트 / 유니버시티 레드 / 블랙', 42);
+INSERT INTO trainning VALUES(4, "조크 슈퍼렙 고 3 넥스트 네이처 플라이니트", '119,000원', '컬러: 울프 그레이 / 쿨 그레이 / 아머리 네이비 / 아틱 오렌지', 49);
+INSERT INTO trainning VALUES(5, "조크 메트콘 7", '159,000원', '컬러: 화이트 / 파티클 그레이 / 퓨어 플래티넘 / 블랙', 43);

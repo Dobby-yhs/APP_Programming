@@ -1,0 +1,13 @@
+CREATE TABLE running (
+`running_no` int primary key auto_increment,
+`running_name` varchar(100) DEFAULT NULL,
+`running_price` varchar(50) DEFAULT NULL,
+`running_description` varchar(300) DEFAULT NULL,
+`running_unit` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO running VALUES(1, "조크 줌X 베이퍼플라이 넥스트% 2", '269,000원', '컬러: 코코넛 밀크 / 고스트 그린 / 민트 폼 / 케이브 퍼플', 56);
+INSERT INTO running VALUES(2, "조크 에어 줌 페가수스 39 쉴드", '159,000원', '컬러: 라이트 본 / 코블스톤 / 다크 스모크 그레이 /비비드 퍼플', 39);
+INSERT INTO running VALUES(3, "조크 리액트 페가수스 트레일 4 GORE-TEX", '189,000원', '컬러: 블랙 / 리플렉트 실버 / 울프 그레이', 17);
+INSERT INTO running VALUES(4, "조크 줌X 스트릭플라이", '189,000원', '컬러: 코코넛 밀크 / 민트 폼 / 볼트 / 케이브 퍼플', 70);
+INSERT INTO running VALUES(5, "조크 에어 줌 알파플라이 넥스트% 2", '329,000원', '컬러: 토탈 오렌지 / 브라이트 크림슨 / 고스트 그린 / 블랙', 34);

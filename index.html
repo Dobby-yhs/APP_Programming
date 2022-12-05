@@ -38,6 +38,21 @@
             document.frmInput.submit();
         }
 
+		function loginId()
+		{
+			if(document.loginfrm.signin_email.value == "") {
+				alert("please check your Email.");
+				document.loginfrm.signin_email.focus();
+				return false;
+			}
+			if(document.loginfrm.signin_password.value == "") {
+				alert("please check your Password.");
+				document.loginfrm.signin_password.focus();
+				return false;
+			}
+
+			document.loginfrm.submit();
+		}
     </script>
 
 </head>
@@ -94,7 +109,7 @@
 			</ul>
 
 			<div class="cd-signin-modal__block js-signin-modal-block" data-type="login"> <!-- log in form -->
-				<form class="cd-signin-modal__form" action="loginCheck.php" method="post" enctype="multipart/form-data">
+				<form class="cd-signin-modal__form" name = "loginfrm" action="loginCheck.php" method="post" enctype="multipart/form-data">
 					<p class="cd-signin-modal__fieldset">
 						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signin_email">E-mail</label>
 						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin_email" name="signin_email" type="email" placeholder="E-mail">
@@ -114,7 +129,7 @@
 					</p>
 
 					<p class="cd-signin-modal__fieldset">
-						<input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login">
+						<button class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" onclick="loginId()" value="Login">
 					</p>
 				</form>
 			</div> <!-- cd-signin-modal__block -->

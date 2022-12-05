@@ -1,0 +1,13 @@
+CREATE TABLE lifestyle (
+`lifestyle_no` int primary key auto_increment,
+`lifestyle_name` varchar(100) DEFAULT NULL,
+`lifestyle_price` varchar(50) DEFAULT NULL,
+`lifestyle_description` varchar(300) DEFAULT NULL,
+`lifestyle_unit` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO lifestyle VALUES(1, "조크 에어 포스 1 미드 '07", '179,000원', '컬러: 플랙스 / 검 라이트 브라운 / 블랙 / 휘트', 33);
+INSERT INTO lifestyle VALUES(2, "조크 에어맥스 97", '199,000원', '컬러: 블랙 / 앤트러사이트 / 화이트', 27);
+INSERT INTO lifestyle VALUES(3, "조크 블레이저 로우 '77 점보", '109,000원', '컬러: 세일 / 검 미디엄 브라운 / 프로 그린', 34);
+INSERT INTO lifestyle VALUES(4, "조크 에어 포스 1 '07", '129,000원', '컬러: 화이트', 56); 
+INSERT INTO lifestyle VALUES(5, "조크 블레이저 로우 '77 빈티지", '99,000원', '컬러: 화이트 / 세일 / 블랙', 33);

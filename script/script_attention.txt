@@ -1,0 +1,5 @@
+CREATE TABLE attention (
+`attention_no` int primary key auto_increment,
+`attention_name` varchar(100) DEFAULT NULL,
+`attention_color` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

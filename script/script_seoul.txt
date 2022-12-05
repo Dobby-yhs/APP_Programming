@@ -1,0 +1,12 @@
+CREATE TABLE seoul (
+`seoul_no` int primary key auto_increment,
+`seoul_product` varchar(100) DEFAULT NULL,
+`seoul_unit` int DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO seoul VALUES(1, "조크 에어맥스 알파 트레이너 5", 32);
+INSERT INTO seoul VALUES(2, "조크 메트콘 7", 28);
+INSERT INTO seoul VALUES(3, "조크 줌X 베이퍼플라이 넥스트% 2", 27);
+INSERT INTO seoul VALUES(4, "조크 에어 조던 1 미드 SE 크래프트 1 '07", 8);
+INSERT INTO seoul VALUE(5, "조크 에어맥스 97", 27);
+INSERT INTO seoul VALUES(6, "조크 블레이저 로우 '77 빈티지", 33);

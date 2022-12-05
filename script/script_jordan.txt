@@ -1,0 +1,13 @@
+CREATE TABLE jordan (
+`jordan_no` int primary key auto_increment,
+`jordan_name` varchar(100) DEFAULT NULL,
+`jordan_price` varchar(50) DEFAULT NULL,
+`jordan_description` varchar(300) DEFAULT NULL,
+`jordan_unit` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO jordan VALUES(1, "조크 에어 조던 1 로우", '129,000원', '컬러: 체리우드 레드 / 화이트 / 시멘트 그레이', 43); 
+INSERT INTO jordan VALUES(2, "조크 조던 누 레트로 1 로우", '119,000원', '컬러: 바시티 레드 / 화이트 / 블랙', 68); 
+INSERT INTO jordan VALUES(3, "조크 에어 조던 XXXVII 테이텀 PF", '239,000원', '컬러: 페일 바닐라 / 블랙 / 페일 아이보리 / 유니버시티 레드', 24); 
+INSERT INTO jordan VALUES(4, "조크 에어 조던 1 미드 SE 크래프트 1 '07", '159,000원', '컬러: 블랙 / 라이트 그래파이트 / 세일 / 시멘트 그레이', 8); 
+INSERT INTO jordan VALUES(5, "조크 조던 시리즈 .06", '99,000원', '컬러: 세일 / 화이트 / 브라이트 크림슨 / 블랙', 36); 

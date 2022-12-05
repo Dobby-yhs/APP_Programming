@@ -1,0 +1,12 @@
+CREATE TABLE pyeongchon (
+`pyeongchon_no` int primary key auto_increment,
+`pyeongchon_product` varchar(100) DEFAULT NULL,
+`pyeongchon_unit` int DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO pyeongchon VALUES(1, "조크 프리 메트콘 4", 14);
+INSERT INTO pyeongchon VALUES(2, "조크 슈퍼렙 고 3 넥스트 네이처 플라이니트", 12);
+INSERT INTO pyeongchon VALUES(3, "조크 에어 줌 페가수스 39 쉴드", 16);
+INSERT INTO pyeongchon VALUES(4, "조크 조던 누 레트로 1 로우", 7);
+INSERT INTO pyeongchon VALUES(5, "조크 조던 시리즈 .06", 17);
+INSERT INTO pyeongchon VALUES(6, "조크 에어 포스 1 '07", 16);
