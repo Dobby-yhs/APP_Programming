@@ -1,0 +1,34 @@
+CREATE TABLE search (
+`search_no` int primary key auto_increment,
+`search_product` varchar(100) DEFAULT NULL,
+`search_mall` varchar(100) DEFAULT NULL,
+`search_unit` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO search VALUES(1, "조크 디파이 올 데이", "간석", 27);
+INSERT INTO search VALUES(2, "조크 에어맥스 알파 트레이너 5", "간석 | 서울", 71);
+INSERT INTO search VALUES(3, "조크 에어 줌 알파플라이 넥스트% 2", "간석 | 광명", 34);
+INSERT INTO search VALUES(4, "조크 에어 조던 1 로우", "간석", 28);
+INSERT INTO search VALUES(5, "조크 조던 누 레트로 1 로우", "간석 | 평촌 | 인천터미널", 80);
+INSERT INTO search VALUES(6, "조크 에어 포스 1 `07", "간석 | 평촌 | 인천터미널", 83);
+INSERT INTO search VALUES(7, "조크 프리 메트콘 4", "광명 |평촌", 39);
+INSERT INTO search VALUES(8, "조크 메트콘 7", "광명 | 서울", 43);
+INSERT INTO search VALUES(9, "조크 에어 조던 1 미드 SE 크래프트 1 '07", "광명 | 서울", 16)
+INSERT INTO search VALUES(10, "조크 에어포스 1 미드 '07", "광명", 17);
+INSERT INTO search VALUES(11, "조크 블레이저 로우 '77 점보", "광명", 18);
+INSERT INTO search VALUES(12, "조크 줌X 베이퍼플라이 넥스트% 2", "서울 | 명동", 54);
+INSERT INTO search VALUES(13, "조크 에어맥스 97", "서울", 27);
+INSERT INTO search VALUES(14, "조크 블레이저 로우 '77 빈티지", "서울", 33);
+INSERT INTO search VALUES(15, "조크 슈퍼렙 고 3 넥스트 네이처 플라이니트", "평촌 | 인천터미널", 49);
+INSERT INTO search VALUES(16, "조크 에어 줌 페가수스 39 쉴드", "평촌 | 인천터미널", 39);
+INSERT INTO search VALUES(17, "조크 조던 시리즈 .06", "평촌 | 인천터미널", 46);
+INSERT INTO search VALUES(18, "조크 프리 메트콘", "명동", 17);
+INSERT INTO search VALUES(19, "조크 에어맥스 알파 트레이너 5", "명동", 28);
+INSERT INTO search VALUES(20, "조크 줌X 스트릭플라이", "명동 | 인천터미널", 67);
+INSERT INTO search VALUES(21, "조크 에어 조던 XXXVII 테이텀 PF", "명동 ", 16);
+INSERT INTO search VALUES(22, "조크 리액트 페가수스 트레일 4 GORE-TEX", "명동", 7);
+
+
+
+
+

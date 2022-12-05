@@ -11,8 +11,8 @@
 
     while($row = mysqli_fetch_assoc($result)) {
 
-        $pyeongchon_product = $row['pyeongchon_product']
-        $pyeongchon_unit = $row['pyeongchon_unit']     
+        $pyeongchon_product = $row['pyeongchon_product'];
+        $pyeongchon_unit = $row['pyeongchon_unit'];
         
     }
 

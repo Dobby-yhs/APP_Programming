@@ -1,12 +1,12 @@
 CREATE TABLE ganseok (
 `ganseok_no` int primary key auto_increment,
 `ganseok_product` varchar(100) DEFAULT NULL,
-`ganseoks_unit` int DEFAULT NULL,
+`ganseoks_unit` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO ganseok VALUES(1, "조크 디파이 올 데이", 27);
 INSERT INTO ganseok VALUES(2, "조크 에어맥스 알파 트레이너 5", 39);
 INSERT INTO ganseok VALUES(3, "조크 에어 줌 알파플라이 넥스트% 2", 17);
-INSERT INTO ganseok VALUES(4, "조크 에어 조던 1 로우", 28)
+INSERT INTO ganseok VALUES(4, "조크 에어 조던 1 로우", 28);
 INSERT INTO ganseok VALUE(5, "조크 조던 누 레트로 1 로우", 35);
 INSERT INTO ganseok VALUES(6, "조크 에어 포스 1 '07", 31);

@@ -1,7 +1,7 @@
 CREATE TABLE seoul (
 `seoul_no` int primary key auto_increment,
 `seoul_product` varchar(100) DEFAULT NULL,
-`seoul_unit` int DEFAULT NULL,
+`seoul_unit` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO seoul VALUES(1, "조크 에어맥스 알파 트레이너 5", 32);

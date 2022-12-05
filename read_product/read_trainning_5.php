@@ -11,10 +11,10 @@
 
     while($row = mysqli_fetch_assoc($result)) {
 
-        $trainning_name = $row['trainning_name']
-        $trainning_price = $row['trainning_price']
-        $trainning_description = $row['trainning_description']
-        $trainning_unit = $row['trainning_unit']     
+        $trainning_name = $row['trainning_name'];
+        $trainning_price = $row['trainning_price'];
+        $trainning_description = $row['trainning_description'];
+        $trainning_unit = $row['trainning_unit'];     
         
     }
 

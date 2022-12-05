@@ -11,10 +11,10 @@
 
     while($row = mysqli_fetch_assoc($result)) {
 
-        $running_name = $row['running_name']
-        $running_price = $row['running_price']
-        $running_description = $row['running_description']
-        $running_unit = $row['running_unit']     
+        $running_name = $row['running_name'];
+        $running_price = $row['running_price'];
+        $running_description = $row['running_description'];
+        $running_unit = $row['running_unit'];     
         
     }
 

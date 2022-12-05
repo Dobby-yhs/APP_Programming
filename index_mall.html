@@ -24,16 +24,7 @@
             <nav class="cd-main-nav js-main-nav">
                 <ul class="cd-main-nav__list js-signin-modal-trigger">
                     <!-- inser more links here -->
-                    <li><input id="search" name="search" type="text" placeholder="Search.." style="width: 300px; height:30px"> <button class="btn btn-secondary">검색</button></li>
-                    <li class="dropdown">
-                        <button class="dropbtn cd-main-nav__item cd-main-nav__item--signup" onclick="myFunction()"> 상품 </button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="./ad_product/product_lifestyle.html"> 라이프스타일 </a>
-                            <a href="./ad_product/product_jordan.html"> 조던 </a>
-                            <a href="./ad_product/product_running.html"> 러닝 </a>
-                            <a href="./ad_product/product_trainning.html"> 트레이닝 </a>
-                        </div>
-                    </li>
+                    <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="index_product.html">상품</a></li>
                     <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="index_mall.html">매장</a></li>
                     <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="index_newproduct.html">출시 예정 상품</a></li>
                 </ul>
@@ -48,19 +39,19 @@
                 <option>지역 선택</option>
                 <option value="seoul">서울</option>
                 <option value="incheon">인천</option>
-                <option value="gyeonggi">부산</option>
+                <option value="gyeonggi">경기</option>
             </select>
             <select id="mall" name="mall" onchange="classification(this)">
                 <option>매장 선택</option>
             </select>
             <butotn type="button" class="btn btn-secondary" onclick="goPage()">매장 검색</butotn>
         </div>
-        <br><div id='result'></div>
+
         <script>
             function categoryChange(e) {
-                var region_seoul = ["조크 서울","조크 롯데 명동"];
-                var region_incheon = ["조크 간석","조크 롯데 인천터미널"];
-                var region_gyeonggi = ["조크 롯데 광명", "조크 롯데 평촌"];
+                var region_seoul = ["매장 선택", "조크 서울","조크 롯데 명동"];
+                var region_incheon = ["매장 선택", "조크 간석","조크 롯데 인천터미널"];
+                var region_gyeonggi = ["매장 선택", "조크 롯데 광명", "조크 롯데 평촌"];
     
                 var target = document.getElementById("mall");
     
@@ -80,12 +71,7 @@
 
             function classification(e) {
                 const text = e.options[e.selectedIndex].text;
-
-                document.getElementById('result').innerText = text;
-
-                title = text;
-
-                
+                title = text;                
             }
 
             function goPage() {
@@ -127,5 +113,7 @@
             </p>
         </footer>
         <script src="js/dropdown.js"></script>
+        <script src="js/placeholders.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
     </html>

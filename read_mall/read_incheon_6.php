@@ -11,8 +11,8 @@
 
     while($row = mysqli_fetch_assoc($result)) {
 
-        $incheon_product = $row['incheon_product']
-        $incheon_unit = $row['incheon_unit']     
+        $incheon_product = $row['incheon_product'];
+        $incheon_unit = $row['incheon_unit'];     
         
     }
 

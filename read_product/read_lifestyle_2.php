@@ -11,10 +11,10 @@
 
     while($row = mysqli_fetch_assoc($result)) {
 
-        $lifestyle_name = $row['lifestyle_name']
-        $lifestyle_price = $row['lifestyle_price']
-        $lifestyle_description = $row['lifestyle_description']
-        $lifestyle_unit = $row['lifestyle_unit']     
+        $lifestyle_name = $row['lifestyle_name'];
+        $lifestyle_price = $row['lifestyle_price'];
+        $lifestyle_description = $row['lifestyle_description'];
+        $lifestyle_unit = $row['lifestyle_unit']; 
         
     }
 

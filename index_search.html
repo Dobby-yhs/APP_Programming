@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+    <link rel="stylesheet" href="css/dropbar.css">
+  	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script>
+		function read_API_search_product() {
+			var Temp;
+
+			$.ajax({
+				url: 'data_management.php',
+				type: 'get',
+				dataType: 'json',
+				async: false,
+				success: function (data) {
+					Temp = data.search_product;
+				},
+
+				error: function(e) {
+					alert("");
+				}
+			});
+		
+			return Temp;
+		}   
+		
+		function read_API_search_mall() {
+			var Temp;
+
+			$.ajax({
+				url: 'data_management.php',
+				type: 'get',
+				dataType: 'json',
+				async: false,
+				success: function (data) {
+					Temp = data.serach_mall;
+				},
+
+				error: function(e) {
+					alert("");
+				}
+			});
+		
+			return Temp;
+		}   
+
+		function read_API_search_unit() {
+			var Temp;
+
+			$.ajax({
+				url: 'data_management.php',
+				type: 'get',
+				dataType: 'json',
+				async: false,
+				success: function (data) {
+					Temp = data.search_unit;
+				},
+
+				error: function(e) {
+					alert("");
+				}
+			});
+		
+			return Temp;
+		}   
+
+	</script>
+		
+	<title>수량 파악 사이트</title>
+
+</head>
+<body>
+	<header class="cd-main-header">
+		<div class="cd-main-header__logo"><a href="index_ad.html"><img src="img/logo.png" width="80px" height="50px" alt="Logo"></a></div>
+
+		<nav class="cd-main-nav js-main-nav">
+			<form action="data_management.php" method="get" enctype="multipart/form-data">
+				<ul class="cd-main-nav__list js-signin-modal-trigger">
+					<!-- inser more links here -->
+					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="index_product.html">상품</a></li>
+					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="index_mall.html">매장</a></li>
+	                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="index_newproduct.html">출시 예정 상품</a></li>
+				</ul>
+			</form>
+		</nav>
+	</header>
+	
+	<br><br>
+
+	<!-- body_main -->
+	<div class="container">
+		<h1> 찾으시는 상품 </h1>
+		<div class="row" align="center">
+			<h4> <script>document.write(read_API_search_product())</script></h4>
+			<p> 매장 : <script>document.write(read_API_search_mall())</script> </p>
+            <p> 총 수량 : <script>document.write(read_API_search_unit())</script> </p>
+		</div>
+	</div>
+
+	<br><br>
+	
+	<footer class="container">
+		<hr>
+		<p>
+			&copy; 대표 : 윤해상    고유 번호 : 20191002    메일 : jjj1299@sungkyul.ac.kr
+		</p>
+	</footer>
+    <script src="js/dropdown.js"></script>
+	<script src="js/placeholders.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

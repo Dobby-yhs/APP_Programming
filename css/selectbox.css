@@ -7,7 +7,7 @@ body {
   .box {
     position: relative;
     top: 50%;
-    left: 34%;
+    left: 10%;
   }
   
   .box select {

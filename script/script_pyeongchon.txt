@@ -1,7 +1,7 @@
 CREATE TABLE pyeongchon (
 `pyeongchon_no` int primary key auto_increment,
 `pyeongchon_product` varchar(100) DEFAULT NULL,
-`pyeongchon_unit` int DEFAULT NULL,
+`pyeongchon_unit` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO pyeongchon VALUES(1, "조크 프리 메트콘 4", 14);
