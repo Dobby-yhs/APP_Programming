@@ -1,7 +1,7 @@
 CREATE TABLE ganseok (
 `ganseok_no` int primary key auto_increment,
 `ganseok_product` varchar(100) DEFAULT NULL,
-`ganseoks_unit` int DEFAULT NULL
+`ganseok_unit` int DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO ganseok VALUES(1, "조크 디파이 올 데이", 27);

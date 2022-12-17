@@ -274,12 +274,23 @@
         <div class="cd-main-header__logo"><a href="../index_ad.html"><img src="../img/logo.png" width="80px" height="50px" alt="Logo"></a></div>
 
         <nav class="cd-main-nav js-main-nav">
-            <ul class="cd-main-nav__list js-signin-modal-trigger">
-                <!-- inser more links here -->
-                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_product.html">상품</a></li>
-                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_mall.html">매장</a></li>
-                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_newproduct.html">출시 예정 상품</a></li>
-            </ul>
+			<form action="../index_search.php" method="post" enctype="multipart/form-data">
+				<ul class="cd-main-nav__list js-signin-modal-trigger">
+					<li><input id="search" name="search" type="text" placeholder="Search.." style="width: 300px; height:30px"> <button type="submit" class="btn btn-secondary">검색</button></li>
+					<li></li>
+					<li class="dropdown">
+						<a class="dropbtn cd-main-nav__item cd-main-nav__item--signup" onclick="myFunction()"> 상품 </a>
+						<div id="myDropdown" class="dropdown-content">
+							<a href="../ad_product/product_lifestyle.html"> 라이프스타일 </a>
+							<a href="../ad_product/product_jordan.html"> 조던 </a>
+							<a href="../ad_product/product_running.html"> 러닝 </a>
+							<a href="../ad_product/product_trainning.html"> 트레이닝 </a>
+						</div>
+					</li>
+					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_mall.html">매장</a></li>
+	                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_newproduct.html">출시 예정 상품</a></li>
+				</ul>
+			</form>
         </nav>
     </header>
 

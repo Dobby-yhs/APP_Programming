@@ -13,7 +13,7 @@ INSERT INTO search VALUES(5, "조크 조던 누 레트로 1 로우", "간석 | �
 INSERT INTO search VALUES(6, "조크 에어 포스 1 `07", "간석 | 평촌 | 인천터미널", 83);
 INSERT INTO search VALUES(7, "조크 프리 메트콘 4", "광명 |평촌", 39);
 INSERT INTO search VALUES(8, "조크 메트콘 7", "광명 | 서울", 43);
-INSERT INTO search VALUES(9, "조크 에어 조던 1 미드 SE 크래프트 1 '07", "광명 | 서울", 16)
+INSERT INTO search VALUES(9, "조크 에어 조던 1 미드 SE 크래프트 1 '07", "광명 | 서울", 16);
 INSERT INTO search VALUES(10, "조크 에어포스 1 미드 '07", "광명", 17);
 INSERT INTO search VALUES(11, "조크 블레이저 로우 '77 점보", "광명", 18);
 INSERT INTO search VALUES(12, "조크 줌X 베이퍼플라이 넥스트% 2", "서울 | 명동", 54);

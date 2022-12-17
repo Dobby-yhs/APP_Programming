@@ -1,12 +1,12 @@
 <?php
 
     $host = 'localhost';
-    $user = 'korea';
+    $user = 'dobbi';
     $pw = '1234';
     $dbName = 'project';
     $mysqli = new mysqli($host, $user, $pw, $dbName);
 
-    $sql = "SELECT * FROM seoul where seoul_no = 6"; 
+    $sql = "SELECT * FROM seoul where seoul_no = 6";
     $result = mysqli_query($mysqli, $sql);
 
     while($row = mysqli_fetch_assoc($result)) {
