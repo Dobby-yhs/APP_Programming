@@ -1,5 +1,24 @@
 CREATE TABLE attention (
 `attention_no` int primary key auto_increment,
 `attention_name` varchar(100) DEFAULT NULL,
-`attention_color` varchar(100) DEFAULT NULL
+`attention_price` varchar(100) DEFAULT NULL,
+`attention_color` varchar(100) DEFAULT NULL,
+`attention_print` varchar(100) DEFAULT NULL,
+`attention_pick` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO attention VALUES (1, '조크 덩크 로우', '129,000원', 'dark', '다크 드리프트우드', 'X');
+INSERT INTO attention VALUES (2, '조크 덩크 로우', '129,000원', 'canion', '캐니언 러스트', 'X');
+INSERT INTO attention VALUES (3, '조크 덩크 로우', '129,000원', 'pink', '핑크 옥스퍼드', 'X');
+INSERT INTO attention VALUES (4, '조크 덩크 로우', '129,000원', 'peach', '피치 크림', 'X');
+INSERT INTO attention VALUES (5, '조크 블레이저 미드 프로 클럽', '129,000원', 'blue', '포토 블루', 'X');
+INSERT INTO attention VALUES (6, '조크 블레이저 미드 프로 클럽', '129,000원', 'habanero', '하바네로 레드', 'X');
+INSERT INTO attention VALUES (7, '조크 블레이저 미드 프로 클럽', '129,000원', 'light', '라이트 본', 'X');
+INSERT INTO attention VALUES (8, '조크 블레이저 미드 프로 클럽', '129,000원', 'white', '화이트', 'X');
+INSERT INTO attention VALUES (9, '조크 줌 프릭 4', '149,000원', 'orange', '오렌지 트랜스', 'X');
+INSERT INTO attention VALUES (10, '조크 줌 프릭 4', '149,000원', 'bolt', '배얼리 볼트', 'X');
+INSERT INTO attention VALUES (11, '조크 줌 프릭 4', '149,000원', 'gray', '울프 그레이', 'X');
+INSERT INTO attention VALUES (12, '조크 인피니티 프로 2', '139,000원', 'red', '피칸테 레드', 'X');
+INSERT INTO attention VALUES (13, '조크 인피니티 프로 2', '139,000원', 'copa', '코파', 'X');
+INSERT INTO attention VALUES (14, '조크 인피니티 프로 2', '139,000원', 'black', '블랙', 'X');
+INSERT INTO attention VALUES (15, '조크 인피니티 프로 2', '139,000원', 'violet', '바이올렛 프로스트', 'X');

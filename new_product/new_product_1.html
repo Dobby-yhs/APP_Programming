@@ -12,9 +12,19 @@
     <link rel="stylesheet" href="../css/dropbar.css">
   	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
 	<title>수량 파악 사이트</title>
 
+	<script>
+		var img_arr = ["../image/new_shoes/1.png", "../image/new_shoes/2.png", "../image/new_shoes/3.png", "../image/new_shoes/4.png"];
+
+		function changeImg() {
+			var idx = $(".color option").index($(".color option:selected"));
+			document.getElementById("imgchg").src = img_arr[idx];
+		}
+	</script>
+	
 </head>
 <body>
 	<header class="cd-main-header">
@@ -36,6 +46,7 @@
 					</li>
 					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_mall.html">매장</a></li>
 	                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_newproduct.html">출시 예정 상품</a></li>
+					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_attention.php">관심 상품</a></li>
 				</ul>
 			</form>
 		</nav>
@@ -44,29 +55,29 @@
 	<br><br>
 
 	<!-- body_main -->
-	<!-- <form action="../attention_input_1.php" method="get" enctype="multipart/form-data"> -->
-	<div class="container">
-        <h1>출시 예정 상품</h1>
-		<br>
-		<div class="row" align="center">
-			<div class="col-md-5">
-				<img src="../image/new_shoes1.png" alt="new_shoes1">
-				<h4> 조크 덩크 로우</h4>
-				<p> 129,000원 </p>
-				<p> 컬러: 다크 드리프트우드 / 세서미 / 세일 / 블랙</p>
+	<form action="../attention_input.php" method="get">
+		<div class="container">
+        	<h1>출시 예정 상품</h1>
+			<br>
+			<div class="row" align="center">
+				<div class="col-md-5">
+					<img id="imgchg" src="../image/new_shoes/1.png" alt="new_shoes1">
+					<h4> 조크 덩크 로우</h4>
+					<p> 출시 예상가 : 129,000원 </p>
+					<p> 컬러: 다크 드리프트우드 / 캐니언 러스트 / 핑크 옥스퍼드 / 피치 크림</p>
+				</div>
 			</div>
+        	<div class="col-md-5">
+	            <select id="color" name="color" class="color" onchange="changeImg()">
+                	<option value="dark">다크 드리프트우드</option>
+                	<option value="canion">캐니언 러스트</option>
+                	<option value="pink">핑크 옥스퍼드</option>
+                	<option value="peach">피치 크림</option>
+            	</select>
+				<button type="submit" class="btn btn-success">관심 상품 등록하기</button>
+        	</div>
 		</div>
-        <div class="col-md-5">
-            <select name="color">
-                <option value="dark">다크 드리프트우드</option>
-                <option value="sesame">세서미</option>
-                <option value="sale">세일</option>
-                <option value="black">블랙</option>
-            </select>
-			<button class="btn btn-success">관심 상품 등록하기</button>
-        </div>
-	</div>
-	<!-- </form> -->
+	</form>
 
 	<br><br>
 	

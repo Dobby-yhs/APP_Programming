@@ -36,6 +36,7 @@
 					</li>
 					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="./index_mall.html">매장</a></li>
 	                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="./index_newproduct.html">출시 예정 상품</a></li>
+					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="./index_attention.php">관심 상품</a></li>
 				</ul>
 			</form>
 		</nav>
@@ -77,7 +78,7 @@
         	}
 
 
-        	?>
+        ?>
 		</div>
 	</div>
 

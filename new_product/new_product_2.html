@@ -15,6 +15,15 @@
 	
 	<title>수량 파악 사이트</title>
 
+	<script>
+		var img_arr = ["../image/new_shoes/5.png", "../image/new_shoes/6.png", "../image/new_shoes/7.png", "../image/new_shoes/8.png"];
+
+		function changeImg() {
+			var idx = $(".color option").index($(".color option:selected"));
+			document.getElementById("imgchg").src = img_arr[idx];
+		}
+	</script>
+
 </head>
 <body>
 	<header class="cd-main-header">
@@ -36,6 +45,7 @@
 					</li>
 					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_mall.html">매장</a></li>
 	                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_newproduct.html">출시 예정 상품</a></li>
+					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="../index_attention.php">관심 상품</a></li>
 				</ul>
 			</form>
 		</nav>
@@ -44,28 +54,29 @@
 	<br><br>
 
 	<!-- body_main -->
-	<!-- <form action="../attention_input_1.php" method="get" enctype="multipart/form-data"> -->
-	<div class="container">
-        <h1>출시 예정 상품</h1>
-		<br>
-		<div class="row" align="center">
-			<div class="col-md-5">
-				<img src="../image/new_shoes2.png" alt="new_shoes2">
-				<h4> 조크 TC 7900 프리미엄 2 </h4>
-				<p> 139,000원 </p>
-				<p> 컬러: 포톤 더스트 / 포톤 더스트 / 그레이 포그 / 화이트 </p>
+	<form action="../attention_input.php" method="get">
+		<div class="container">
+	        <h1>출시 예정 상품</h1>
+			<br>
+			<div class="row" align="center">
+				<div class="col-md-5">
+					<img id="imgchg" src="../image/new_shoes/5.png" alt="new_shoes2">
+					<h4> 조크 블레이저 미드 프로 클럽 </h4>
+					<p> 출시 예상가 : 129,000원 </p>
+					<p> 컬러: 포토 블루 / 하바네로 레드 / 라이트 본 / 화이트 </p>
+				</div>
 			</div>
+        	<div class="col-md-5">
+	            <select id="color" name="color" class="color" onchange="changeImg()">
+                	<option value="blue">포토 블루</option>
+                	<option value="habanero">하바네로 레드</option>
+                	<option value="light">라이트 본</option>
+					<option value="white">화이트</option>
+            	</select>
+				<button type="submit" class="btn btn-success">관심 상품 등록하기</button>
+        	</div>
 		</div>
-        <div class="col-md-5">
-            <select name="color">
-                <option>포톤 더스트</option>
-                <option>그레이 포그</option>
-                <option>화이트</option>
-            </select>
-			<button class="btn btn-success">관심 상품 등록하기</button>
-        </div>
-	</div>
-	<!-- </form> -->
+	</form>
 
 	<br><br>
 	

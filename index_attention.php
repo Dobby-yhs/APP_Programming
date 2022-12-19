@@ -35,7 +35,7 @@
 						</div>
 					</li>
 					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="./index_mall.html">매장</a></li>
-	                <li><a class="cd-main-nav__item cd-main-nav__item--signup" href="./index_newproduct.html">출시 예정 상품</a></li>
+					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="./index_newproduct.html">출시 예정 상품</a></li>
 					<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="./index_attention.php">관심 상품</a></li>
 				</ul>
 			</form>
@@ -46,21 +46,64 @@
 
 	<!-- body_main -->
 	<div class="container">
+        <h1>관심 상품</h1>
+		<br>
 		<div class="row" align="center">
-			<div class="col-md-5">
-				<h2> 품절 임박 상품 </h5>
-				<img src="image/shoes1.png" alt="shoes1">
-				<h4> 조크 에어 포스 1 미드 '07</h4>
-				<p> 179,000원 </p>
-				<p> 컬러: 플랙스 / 검 라이트 브라운 / 블랙 / 휘트 </p>
-			</div>
-			<div class="col-md-5">
-				<h2> 사용자 추천 상품 </h5>
-				<img src="image/shoes3.png" alt="shoes3">
-				<h4> 조크 덩크 하이 레트로 SE </h4>
-				<p> 159,000원 </p>
-				<p> 컬러: 허니듀 / 서밋 화이트 / 엘리멘탈 골드 / 허니듀 </p>
-			</div>
+		<!-- <form action="attention_delete.php" method="post"> -->
+            <?php
+
+	        	$host = 'localhost';
+        		$user = 'dobbi';
+        		$pw = '1234';
+        		$dbName = 'project';
+        		$mysqli = new mysqli($host, $user, $pw, $dbName);
+
+				if (mysqli_connect_error()) {
+					exit('Connect Error (' . mysqli_connect_errno() . ') '. mysqli_connect_error());
+				}
+
+        		$sql = "SELECT * FROM attention where attention_pick = 'O'";
+
+       			$result = mysqli_query($mysqli, $sql);
+				
+				$list = '';
+	        	while($row = mysqli_fetch_assoc($result)) {
+					$attention_no = $row['attention_no'];
+					$attention_name = $row['attention_name'];
+               		$attention_price = $row['attention_price'];
+               		$attention_print = $row['attention_print'];
+
+					$list = $list."<img src=/image/new_shoes/".$attention_no.".png> <h4>".$attention_name."</h4> <p> 가격 : ".$attention_price."</p> <p> 색상 : ".$attention_print."</p><br>";
+					
+					// echo "<img src=/image/new_shoes/".$attention_no.".png>";
+		       		// echo "<h4>".$attention_name."</h4>";
+        			// echo "<p> 가격 : ".$attention_price."</p>";
+        			// echo "<p> 색상 : ".$attention_print."</p><br>";
+           		}   
+
+				$delete_link = '';
+
+				if(isset($row['attention_no'])) {
+					$filtered_id = mysqli_real_escape_string($mysqli, $row['attention_no']);
+					$sql = "SELECT * FROM attention where attention_NO = {$filtered_id}";
+					$result = mysqli_query($mysqli, $sql);
+					$row = mysqli_fetch_assoc($result);
+					$delete_link = '
+						<form action="attention_delete.php" method="post">
+							<input type="hidden" name="product" value="'.$row['attention_no'].'">
+							<input type="submit" class="btn btn-warrning" value="관심 상품 삭제하기">
+						</form>
+					';
+
+					// https://nevertrustbrutus.tistory.com/331
+				}
+
+        	?>
+		<!-- </form> -->
+
+		<?=$list?>
+		<?=$delete_link?>
+
 		</div>
 	</div>
 

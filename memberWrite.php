@@ -13,8 +13,11 @@
 		$mysqli = new mysqli($host, $user, $pw, $dbName);
 
 		$member_email = $_POST['signup_email'];
+		$member_email = addslashes($member_email);
 	    $member_pw = $_POST['signup_password'];
+		$member_pw = addslashes($member_pw);
 	    $member_name = $_POST['signup_username'];
+		$member_name = addslashes($member_name);
 
 		$sql = "insert into member (
 				member_email,
