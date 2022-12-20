@@ -18,7 +18,7 @@
     $product = $_POST['product'];
     $product = addslashes($product);
 
-    $sql = "UPDATE attention SET attention_pick = 'X' where attention_print like '%$product'";
+    $sql = "UPDATE attention SET attention_pick = 'X' where attention_no like '%$product'";
     
     if(mysqli_query($mysqli, $sql)){ 
         echo '<script>alert("해당 상품을 관심 상품에서 삭제하셨습니다.")</script>'; 

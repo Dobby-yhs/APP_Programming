@@ -51,6 +51,9 @@
 		<div class="row" align="center">
 		<!-- <form action="attention_delete.php" method="post"> -->
             <?php
+		 		
+				error_reporting(E_ALL);
+		 		ini_set("display_errors", 1);
 
 	        	$host = 'localhost';
         		$user = 'dobbi';
@@ -65,44 +68,29 @@
         		$sql = "SELECT * FROM attention where attention_pick = 'O'";
 
        			$result = mysqli_query($mysqli, $sql);
-				
-				$list = '';
+	
+
 	        	while($row = mysqli_fetch_assoc($result)) {
 					$attention_no = $row['attention_no'];
 					$attention_name = $row['attention_name'];
                		$attention_price = $row['attention_price'];
                		$attention_print = $row['attention_print'];
 
-					$list = $list."<img src=/image/new_shoes/".$attention_no.".png> <h4>".$attention_name."</h4> <p> 가격 : ".$attention_price."</p> <p> 색상 : ".$attention_print."</p><br>";
-					
-					// echo "<img src=/image/new_shoes/".$attention_no.".png>";
-		       		// echo "<h4>".$attention_name."</h4>";
-        			// echo "<p> 가격 : ".$attention_price."</p>";
-        			// echo "<p> 색상 : ".$attention_print."</p><br>";
+					echo "<img src=/image/new_shoes/".$attention_no.".png>";
+		       		echo "<h4>".$attention_name."</h4>";
+        			echo "<p> 가격 : ".$attention_price."</p>";
+        			echo "<p> 색상 : ".$attention_print."</p><br>";
+			?>
+				
+				<form action="attention_delete.php" method="post">;
+					<button type="submit" id="product" name="product" class="btn btn-danger" value="<?php echo $attention_no; ?>">관심 상품 삭제</button>;
+				</form>
+
+			<?php
+
            		}   
 
-				$delete_link = '';
-
-				if(isset($row['attention_no'])) {
-					$filtered_id = mysqli_real_escape_string($mysqli, $row['attention_no']);
-					$sql = "SELECT * FROM attention where attention_NO = {$filtered_id}";
-					$result = mysqli_query($mysqli, $sql);
-					$row = mysqli_fetch_assoc($result);
-					$delete_link = '
-						<form action="attention_delete.php" method="post">
-							<input type="hidden" name="product" value="'.$row['attention_no'].'">
-							<input type="submit" class="btn btn-warrning" value="관심 상품 삭제하기">
-						</form>
-					';
-
-					// https://nevertrustbrutus.tistory.com/331
-				}
-
         	?>
-		<!-- </form> -->
-
-		<?=$list?>
-		<?=$delete_link?>
 
 		</div>
 	</div>
