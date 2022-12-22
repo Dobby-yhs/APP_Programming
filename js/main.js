@@ -35,7 +35,7 @@
 			(event.which=='27') && removeClass(self.element, 'cd-signin-modal--is-visible');
 		});
 
-		//hide/show password
+		//hide & show password
 		for(var i =0; i < this.hidePassword.length; i++) {
 			(function(i){
 				self.hidePassword[i].addEventListener('click', function(event){
